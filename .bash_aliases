@@ -7,6 +7,9 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
+# cp aliases
+alias cp="cp -i" # confirm before overwriting something
+
 # ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -l'
