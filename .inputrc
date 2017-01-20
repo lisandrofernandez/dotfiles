@@ -1,2 +1,10 @@
 $include /etc/inputrc
+
 set completion-ignore-case on
+
+#[Shift]-[Tab] for menu-complete
+"\e[Z": menu-complete
+#[Ctrl]-[j] for menu-complete
+Control-j: menu-complete
+#[Ctrl]-[k] for menu-complete-backward
+Control-k: menu-complete-backward
