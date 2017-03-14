@@ -55,10 +55,11 @@ fi
 
 if [ -f ~/.git-prompt.sh ]; then
   . ~/.git-prompt.sh
+  export GIT_PS1_SHOWCOLORHINTS=1
   export GIT_PS1_SHOWDIRTYSTATE=1
   export GIT_PS1_SHOWSTASHSTATE=1
   export GIT_PS1_SHOWUNTRACKEDFILES=1
-  PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \w\[\033[01;32m\]]\[\033[01;31m\]$(__git_ps1)\[\033[01;32m\]\$\n »\[\033[00m\] '
+  PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \w\[\033[01;32m\]]\[\033[01;31m\]$(__git_ps1)\[\033[01;32m\] \$\n »\[\033[00m\] '
 else
   PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\n »\[\033[00m\] '
 fi
