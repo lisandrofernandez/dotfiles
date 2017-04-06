@@ -44,7 +44,7 @@ endif
 if has('gui_running')
   try
     colorscheme solarized
-    set background=light
+    set background=dark
   catch
     " do nothing
   endtry
@@ -195,9 +195,9 @@ vnoremap > >gv
 " When no typing, maps <Enter>, <Backspace> and <Space> to
 " scroll one line down, scroll one line up and center to
 " current line, respectively.
-map <Enter> <C-e>
-map <Backspace> <C-y>
-map <Space> zz
+nnoremap <Enter> <C-e>
+nnoremap <Backspace> <C-y>
+nnoremap <Space> zz
 
 " Cycles through listed buffers
 nnoremap <C-l> :bnext<Enter>
