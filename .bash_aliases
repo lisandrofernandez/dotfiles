@@ -65,6 +65,17 @@ else
 fi
 
 
+# fzf options
+export FZF_DEFAULT_OPTS='--reverse'
+# (requires ripgrep)
+# --files: List files that would be searched but do not search
+# --hidden: Search hidden files and folders
+# --ignore-case: Case insensitive search
+# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-case -g "!{.git,node_modules}/*"'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+
 #
 # # ex - archive extractor
 # # usage: ex <file>
