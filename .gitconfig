@@ -1,0 +1,10 @@
+[alias]
+    st = status --short
+    hide = update-index --assume-unchanged
+    unhide = update-index --no-assume-unchanged
+    show-hidden = "!git ls-files -v | grep '^h'"
+    logtree = log --graph --oneline --decorate --all
+    # list modified files
+    ls-modified = ls-files --modified
+    # list new files
+    ls-new = ls-files --others --exclude-standard
