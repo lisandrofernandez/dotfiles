@@ -21,6 +21,9 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
+# rsync aliases
+alias rsync='rsync -h' # output numbers in a human-readable format
+
 # VIM with no plugin and no .vimrc
 alias vimplain='vim -u NONE'
 
