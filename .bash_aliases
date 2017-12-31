@@ -30,6 +30,9 @@ alias vimplain='vim -u NONE'
 # make Midnight Commander exit to its current directory
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
+# make ranger exit to its current directory
+alias ranger='ranger-cd'
+
 
 # http://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # If set, the pattern "**" used in a pathname expansion context will
@@ -103,4 +106,23 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+
+# This is a bash function for .bashrc to automatically change the directory to
+# the last visited one after ranger quits.
+# To undo the effect of this function, you can type "cd -" to return to the
+# original directory.
+function ranger-cd {
+    tempfile="$(mktemp -t tmp.XXXXXX)"
+    ranger="${1:-ranger}"
+    test -z "$1" || shift
+    "$ranger" --choosedir="$tempfile" "${@:-$(pwd)}"
+    returnvalue=$?
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
+    return $returnvalue
 }
