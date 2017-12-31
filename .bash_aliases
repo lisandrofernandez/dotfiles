@@ -10,6 +10,9 @@ export EDITOR="$VISUAL"
 # cp aliases
 alias cp="cp -i" # confirm before overwriting something
 
+# mv aliases
+alias mv="mv -i" # prompt before overwrite
+
 # ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -l'
