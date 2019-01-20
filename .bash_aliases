@@ -75,14 +75,11 @@ else
 fi
 
 
-# fzf options
+# fzf
+[[ -f ~/opt/fzf/shell/completion.bash ]] && . ~/opt/fzf/shell/completion.bash
+[[ -f ~/opt/fzf/shell/key-bindings.bash ]] && . ~/opt/fzf/shell/key-bindings.bash
 export FZF_DEFAULT_OPTS='--reverse'
-# (requires ripgrep)
-# --files: List files that would be searched but do not search
-# --hidden: Search hidden files and folders
-# --ignore-case: Case insensitive search
-# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-case -g "!{.git,node_modules}/*"'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git' # requires fd (https://github.com/sharkdp/fd)
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 
