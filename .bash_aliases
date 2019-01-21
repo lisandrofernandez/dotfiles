@@ -8,10 +8,10 @@ export EDITOR="$VISUAL"
 
 
 # cp aliases
-alias cp="cp -i" # confirm before overwriting something
+alias cp='cp -i' # confirm before overwriting something
 
 # mv aliases
-alias mv="mv -i" # prompt before overwrite
+alias mv='mv -i' # prompt before overwrite
 
 # ls aliases
 alias ls='ls --color=auto'
@@ -29,6 +29,10 @@ alias rsync='rsync -h' # output numbers in a human-readable format
 
 # VIM with no plugin and no .vimrc
 alias vimplain='vim -u NONE'
+
+# xclip aliases
+alias xcopy='xclip -selection clipboard' # copy to clipboard
+alias xpaste='xclip -selection clipboard -o' # paste from clipboard
 
 # make Midnight Commander exit to its current directory
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
