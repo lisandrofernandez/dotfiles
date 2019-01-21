@@ -228,3 +228,5 @@ command! -bang -nargs=? -complete=dir Files
 
 nnoremap <C-p> :Files<Enter>
 nnoremap <C-e> :Buffers<Enter>
+nnoremap <Leader>rg :Rg<Enter>
+nnoremap <Leader>ag :Ag<Enter>
