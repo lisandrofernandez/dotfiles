@@ -112,7 +112,7 @@ set ignorecase
 set smartcase
 
 " Allow backspacing over everything in insert mode
-"set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 " Code autocompletion
 set omnifunc=syntaxcomplete#Complete
