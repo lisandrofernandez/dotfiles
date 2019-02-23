@@ -34,6 +34,12 @@ alias vimplain='vim -u NONE'
 alias xcopy='xclip -selection clipboard' # copy to clipboard
 alias xpaste='xclip -selection clipboard -o' # paste from clipboard
 
+# pacman aliases
+alias pacu='sudo pacman -Syyu'
+
+# yay aliases
+alias yayu='yay -Syu'
+
 # make Midnight Commander exit to its current directory
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
