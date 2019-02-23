@@ -34,7 +34,7 @@ endif
 " Colorscheme for the 256-colored xterm
 if &t_Co >= 256
   try
-    colorscheme molokai_transparent
+    colorscheme snazzy
   catch
     " do nothing
   endtry
