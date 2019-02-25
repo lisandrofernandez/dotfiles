@@ -201,6 +201,7 @@ Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 " Initialize plugin system
 call plug#end()
