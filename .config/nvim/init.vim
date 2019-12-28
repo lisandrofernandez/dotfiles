@@ -197,6 +197,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/w0rp/ale.git'
 Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
