@@ -192,6 +192,8 @@ Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/junegunn/fzf.vim'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+" requieres Exuberant Ctags or Universal Ctags
+Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'https://github.com/dracula/vim.git', {'as': 'dracula'}
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
@@ -232,3 +234,4 @@ nnoremap <C-p> :Files<Enter>
 nnoremap <C-e> :Buffers<Enter>
 nnoremap <Leader>rg :Rg<Enter>
 nnoremap <Leader>ag :Ag<Enter>
+nnoremap <Leader>tb :TagbarToggle<Enter>
