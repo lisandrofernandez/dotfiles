@@ -21,16 +21,7 @@ set mouse=a
 
 if $TERM == 'xterm'
   set t_Co=256
-  "set termguicolors
-endif
-
-" Colorscheme for the 256-colored xterm
-if &t_Co >= 256
-  try
-    colorscheme monokai
-  catch
-    " do nothing
-  endtry
+  set termguicolors
 endif
 
 " Enable line numbers
@@ -196,16 +187,22 @@ let g:python3_host_prog = '/usr/bin/python3'
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/dense-analysis/ale.git'
-Plug 'https://github.com/junegunn/fzf.vim'
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+Plug 'https://github.com/junegunn/fzf.vim'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+Plug 'https://github.com/dracula/vim.git', {'as': 'dracula'}
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 " Initialize plugin system
 call plug#end()
+
+" Colorscheme for the 256-colored xterm
+if &t_Co >= 256
+  colorscheme dracula
+endif
 
 " Plugin settings "
 
