@@ -186,21 +186,18 @@ let g:python3_host_prog = '/usr/bin/python3'
 " vim-plug (plugin manager)
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'https://github.com/dense-analysis/ale.git'
-" requieres nodejs
-Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
-Plug 'https://github.com/junegunn/fzf.vim'
-Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
-" requieres Exuberant Ctags or Universal Ctags
-Plug 'https://github.com/majutsushi/tagbar.git'
-Plug 'https://github.com/dracula/vim.git', {'as': 'dracula'}
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
-" requieres Nerd Fonts
-Plug 'https://github.com/ryanoasis/vim-devicons.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/airblade/vim-gitgutter.git'
+Plug 'dense-analysis/ale.git'
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " requieres nodejs
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree.git'
+Plug 'Xuyuanp/nerdtree-git-plugin.git'
+Plug 'majutsushi/tagbar.git' " requieres Exuberant Ctags or Universal Ctags
+Plug 'dracula/vim.git', {'as': 'dracula'}
+Plug 'vim-airline/vim-airline.git' " requieres Powerline fonts
+Plug 'vim-airline/vim-airline-themes.git'
+Plug 'ryanoasis/vim-devicons.git' " requieres Nerd Fonts
+Plug 'tpope/vim-fugitive.git'
+Plug 'airblade/vim-gitgutter.git'
 " Initialize plugin system
 call plug#end()
 
