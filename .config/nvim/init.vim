@@ -188,6 +188,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dense-analysis/ale.git'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " requieres nodejs
+Plug 'junegunn/fzf', {'dir': '~/opt/fzf'} " in case of fzf manual installation
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree.git'
 Plug 'Xuyuanp/nerdtree-git-plugin.git'
