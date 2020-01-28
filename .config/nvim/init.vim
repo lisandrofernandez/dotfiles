@@ -204,7 +204,11 @@ call plug#end()
 
 " Colorscheme for the 256-colored xterm
 if &t_Co >= 256
-  colorscheme dracula
+  try
+    colorscheme dracula
+  catch
+    " do nothing
+  endtry
 endif
 
 " Plugin settings "
