@@ -186,19 +186,19 @@ let g:python3_host_prog = '/usr/bin/python3'
 " vim-plug (plugin manager)
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'dense-analysis/ale.git'
+Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " requieres nodejs
 Plug 'junegunn/fzf', {'dir': '~/opt/fzf'} " in case of fzf manual installation
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree.git'
-Plug 'Xuyuanp/nerdtree-git-plugin.git'
-Plug 'majutsushi/tagbar.git' " requieres Exuberant Ctags or Universal Ctags
-Plug 'dracula/vim.git', {'as': 'dracula'}
-Plug 'vim-airline/vim-airline.git' " requieres Powerline fonts
-Plug 'vim-airline/vim-airline-themes.git'
-Plug 'ryanoasis/vim-devicons.git' " requieres Nerd Fonts
-Plug 'tpope/vim-fugitive.git'
-Plug 'airblade/vim-gitgutter.git'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'majutsushi/tagbar' " requieres Exuberant Ctags or Universal Ctags
+Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'vim-airline/vim-airline' " requieres Powerline fonts
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons' " requieres Nerd Fonts
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " Initialize plugin system
 call plug#end()
 
