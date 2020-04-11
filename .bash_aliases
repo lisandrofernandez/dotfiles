@@ -36,6 +36,7 @@ alias xpaste='xclip -selection clipboard -o' # paste from clipboard
 
 # pacman aliases
 alias pacu='sudo pacman -Syyu'
+alias pacr='sudo pacman -Rcn'
 
 # yay aliases
 alias yayu='yay -Syu'
