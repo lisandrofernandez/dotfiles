@@ -1,5 +1,7 @@
 [alias]
     st = status --short
+    unstage = restore --staged
+    diff-staged = diff --staged
     hide = update-index --assume-unchanged
     unhide = update-index --no-assume-unchanged
     show-hidden = "!git ls-files -v | grep '^h'"
