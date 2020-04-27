@@ -8,7 +8,7 @@ export EDITOR="$VISUAL"
 
 
 # cp aliases
-alias cp='cp -i' # confirm before overwriting something
+alias cp='cp -i' # prompt before overwrite
 
 # mv aliases
 alias mv='mv -i' # prompt before overwrite
