@@ -69,12 +69,12 @@ complete -cf sudo
 complete -cf man
 
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f /usr/share/git/completion/git-completion.bash ]; then
+  . /usr/share/git/completion/git-completion.bash
 fi
 
-#if [ -f ~/.git-prompt.sh ]; then
-#  . ~/.git-prompt.sh
+#if [ -f /usr/share/git/git-prompt.sh ]; then
+#  . /usr/share/git/git-prompt.sh
 #  export GIT_PS1_SHOWCOLORHINTS=1
 #  export GIT_PS1_SHOWDIRTYSTATE=1
 #  export GIT_PS1_SHOWSTASHSTATE=1
