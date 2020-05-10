@@ -87,8 +87,8 @@ fi
 
 
 # fzf
-[[ -f ~/opt/fzf/shell/completion.bash ]] && . ~/opt/fzf/shell/completion.bash
-[[ -f ~/opt/fzf/shell/key-bindings.bash ]] && . ~/opt/fzf/shell/key-bindings.bash
+[[ -f /usr/share/fzf/completion.bash ]] && . /usr/share/fzf/completion.bash
+[[ -f /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
 export FZF_DEFAULT_OPTS='--reverse'
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git' # requires fd (https://github.com/sharkdp/fd)
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
