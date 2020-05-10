@@ -35,8 +35,8 @@ alias xcopy='xclip -selection clipboard' # copy to clipboard
 alias xpaste='xclip -selection clipboard -o' # paste from clipboard
 
 # pacman aliases
-alias pacu='sudo pacman -Syyu'
-alias pacr='sudo pacman -Rnsu'
+alias pacu='sudo pacman -Syyu' # refresh the package database and update
+alias pacr='sudo pacman -Rnsu' # remove a package and its no longer required dependencies
 
 # yay aliases
 alias yayu='yay -Syu'
