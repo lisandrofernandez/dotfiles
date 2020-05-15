@@ -190,7 +190,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " requieres nodejs
 Plug 'junegunn/fzf', {'dir': '~/opt/fzf'} " in case of fzf manual installation
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar' " requieres Exuberant Ctags or Universal Ctags
 Plug 'dracula/vim', {'as': 'dracula'}
