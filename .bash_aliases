@@ -49,6 +49,9 @@ alias mc='. /usr/lib/mc/mc-wrapper.sh'
 # make ranger exit to its current directory
 alias ranger='ranger-cd'
 
+# go-up aliases
+alias ..='go-up'
+
 
 # http://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # If set, the pattern "**" used in a pathname expansion context will
@@ -139,3 +142,38 @@ function ranger-cd {
     rm -f -- "$tempfile"
     return $returnvalue
 }
+
+
+# cd up a given number of levels, or one level if no number is given.
+# SYNOPSIS: go-up [NUMBER]
+#
+# go-up 3 is equivalent to cd ../../..
+# go-up is equivalent to cd ..
+go-up() {
+  if [[ $# -gt 1 ]]; then
+    __log-error "go-up: too many arguments"
+    return 1
+  fi
+
+  if [[ $# -eq 0 ]]; then
+    cd ..
+    return 0
+  fi
+
+  if ! [[ $1 =~ ^[0-9]+$ ]]; then
+    __log-error "go-up: invalid argument: $1"
+    return 1
+  fi
+
+  n=$1
+  DESTDIR="."
+  while [ $n -ne 0 ]; do
+    DESTDIR="$DESTDIR/.."
+    (( --n ))
+  done
+
+  cd $DESTDIR
+}
+
+
+__log-error() { echo "$@" 1>&2; }
