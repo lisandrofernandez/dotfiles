@@ -91,6 +91,15 @@ fi
 #fi
 
 
+if [ -f /usr/share/bash-completion/completions/docker ]; then
+  . /usr/share/bash-completion/completions/docker
+fi
+
+if [ -f /usr/share/bash-completion/completions/docker-compose ]; then
+  . /usr/share/bash-completion/completions/docker-compose
+fi
+
+
 # fzf
 [[ -f /usr/share/fzf/completion.bash ]] && . /usr/share/fzf/completion.bash
 [[ -f /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
