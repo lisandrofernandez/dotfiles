@@ -186,4 +186,12 @@ go-up() {
 }
 
 
+# tere
+# https://github.com/mgunyho/tere
+tere() {
+    local result=$(command tere "$@" --gap-search-anywhere --filter-search)
+    [ -n "$result" ] && cd -- "$result"
+}
+
+
 __log-error() { echo "$@" 1>&2; }
