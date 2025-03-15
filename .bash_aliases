@@ -41,9 +41,6 @@ alias pacr='sudo pacman -Rnsu' # remove a package and its no longer required dep
 alias pacol='pacman -Qdt' # list orphans
 alias pacor='pacr $(pacman -Qdtq)' # remove orphans
 
-# yay aliases
-alias yayu='yay -Syu'
-
 # make Midnight Commander exit to its current directory
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
