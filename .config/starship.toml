@@ -1,0 +1,39 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$character"""
+
+add_newline = false
+
+palette = "neon"
+
+[palettes.neon]
+neon_green = "#39ff14"
+neon_red = "#ff3131"
+electric_cyan = "#0ff0fc"
+
+[character]
+success_symbol = "[❯](bold neon_green)"
+error_symbol = "[❯](bold neon_red)"
+vimcmd_symbol = "[❯](bold neon_green)"
+
+[directory]
+style = "bold electric_cyan"
+
+[git_branch]
+symbol = " "
+style = "bright-black"
+
+[git_state]
+style = "bright-black"
+
+[git_status]
+style = "218"
+format = "([$all_status$ahead_behind]($style) )"
+deleted = '⨯'
