@@ -16,7 +16,6 @@ alias lla='ls -lA'
 # fuzzy cd
 alias c='cd $(fd -td -H -d1 | fzf)'
 
-
 # tere
 # https://github.com/mgunyho/tere
 function tere
@@ -25,13 +24,7 @@ function tere
     [ -n "$result" ] && cd -- "$result"
 end
 
-# tere for keybinding
-function __tere
-    tere
-    commandline -f repaint
-end
-
 # keybindings
 function fish_user_key_bindings
-    bind \ec __tere
+    bind alt-c 'tere; commandline -f repaint'
 end
